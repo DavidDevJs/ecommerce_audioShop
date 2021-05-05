@@ -60,7 +60,10 @@ module.exports = {
       filename: './index.html',
     }),
     new MiniCssExtractPlugin(),
-    new BundleAnalyzerPlugin(),
+//    new BundleAnalyzerPlugin({
+//      analyzerMode: 'static',
+//      openAnalyzer: true,
+//    }),
     new CopyPlugin({
       patterns: [
         {
@@ -72,7 +75,7 @@ module.exports = {
   ],
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
-    compress: true,
+    compress: false,
     port: 3006,
   },
 };

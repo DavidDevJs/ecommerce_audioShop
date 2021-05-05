@@ -1,18 +1,20 @@
 import React from 'react';
+import { Hero, ButtonSEE } from './HomeStyled.js';
 
 export const Home = () => {
   return (
     <>
-      <section>
-        <h1>Title Produc Publicity</h1>
+      <Hero>
+        <p>New Product</p>
+        <h1>
+          XX99 MARK II <br /> HEADPHONE
+        </h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sequi
-          quidem quo quasi ratione, exercitationem enim in. Ratione corrupti
-          aliquam earum provident ea quod tenetur dicta sint iusto impedit.
-          Recusandae.
+          Experience natural, lifelike audio and exepcional build quality made
+          for the passionate music enthusiast.
         </p>
-        <button>SEE PRODUCT</button>
-      </section>
+        <ButtonSEE>SEE PRODUCT</ButtonSEE>
+      </Hero>
     </>
   );
 };
