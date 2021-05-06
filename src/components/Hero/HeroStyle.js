@@ -3,6 +3,10 @@ import hero_phone from '../../assets/images/phone/hero_phone.jpg';
 import hero_desktop from '../../assets/images/desktop/hero_desktop.jpg';
 import { device } from '../../deviceStyle';
 
+export const div = styled.div`
+  background-color: black;
+`;
+
 export const Container = styled.section`
   display: flex;
   flex-direction: column;
@@ -11,12 +15,18 @@ export const Container = styled.section`
   justify-content: center;
   text-align: center;
   background-image: url(${hero_phone});
+  background-position: center;
   background-image: no-repeat;
   background-size: cover;
   @media ${device.mobileL} {
     background-image: url(${hero_desktop});
     font-size: 20px;
   }
+`;
+
+export const P = styled.p`
+  color: white;
+  -webkit-text-stroke: 1px #adadad;
 `;
 
 export const ButtonSEE = styled.button`

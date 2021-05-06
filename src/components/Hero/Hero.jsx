@@ -1,19 +1,21 @@
 import React from 'react';
-import { Container, ButtonSEE } from './HeroStyle';
+import { Container, ButtonSEE, P, div } from './HeroStyle';
 
 export const Hero = () => {
   return (
     <>
       <Container>
-        <p>New Product</p>
-        <h1>
-          XX99 MARK II <br /> HEADPHONE
-        </h1>
-        <p>
-          Experience natural, lifelike audio and exepcional build quality made
-          for the passionate music enthusiast.
-        </p>
-        <ButtonSEE>SEE PRODUCT</ButtonSEE>
+        <div>
+          <P>New Product</P>
+          <h1>
+            XX99 MARK II <br /> HEADPHONE
+          </h1>
+          <P>
+            Experience natural, lifelike audio and exepcional build quality made
+            for the passionate music enthusiast.
+          </P>
+          <ButtonSEE>SEE PRODUCT</ButtonSEE>
+        </div>
       </Container>
     </>
   );
