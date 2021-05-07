@@ -1,8 +1,9 @@
 import React from 'react';
 import { List, Item, Img } from './CategoriesStyles';
 import { ArrowScroll } from '../Buttons/ArrowScroll';
+import { device } from '../../deviceStyle';
 
-let categories = [
+const categories = [
   {
     id: 1,
     imgProduct: '../../assets/images/phone/headPhone_category.png',
@@ -34,6 +35,7 @@ export const Categories = () => {
           </Item>
         ))}
       </List>
+
       <ArrowScroll />
     </>
   );

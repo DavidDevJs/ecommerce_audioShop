@@ -10,6 +10,7 @@ export const List = styled.ul`
   overflow-y: hidden;
   @media ${device.tablet} {
     justify-content: center;
+    overflow: hidden;
   }
 `;
 
