@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Wrapper, SvgRight, SvgLeft } from './ArrowScrollStyle';
+import { device } from '../../deviceStyle';
 
 export const ArrowScroll = () => {
+  //Pendiente manejar el render condicional con el numero de categorias
+  const [width, setWidth] = useState(dev);
   return (
     <Wrapper>
       <SvgRight
